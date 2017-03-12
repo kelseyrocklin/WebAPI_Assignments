@@ -1,0 +1,2 @@
+Oauth tokens should not be granted in the main flow because it is much more efficient to have asynchronous callbacks so that 
+the main flow can continue until the callback is finished. That way the program doesn't hang waiting for the callback to finish.
