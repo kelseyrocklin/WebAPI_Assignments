@@ -1,0 +1,67 @@
+{
+	"id": "87d87b70-10ab-feba-1e70-f146805c0bcf",
+	"name": "Homework3",
+	"description": null,
+	"order": [
+		"18cd9c60-c477-c81a-ce49-c3bf27ac7903",
+		"a84f0cd8-afdc-26e8-6652-b35b01524405"
+	],
+	"folders": [],
+	"timestamp": 0,
+	"owner": "1502163",
+	"public": false,
+	"requests": [
+		{
+			"id": "18cd9c60-c477-c81a-ce49-c3bf27ac7903",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "https://kelseyrocklin-test.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "X373dSTuhdnEZGBFbfPGzQZqbJ6c2sdt",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "rQYa9bOnIjvwMD1k",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "var response = JSON.parse(responseBody);\nvar token = response.access_token;\npostman.setEnvironmentVariable(\"Token\", token);\n\nconsole.log(\"Token: \" + environment.Token);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1489289463487,
+			"name": "Apigee authentication call",
+			"description": "",
+			"collectionId": "87d87b70-10ab-feba-1e70-f146805c0bcf",
+			"responses": []
+		},
+		{
+			"id": "a84f0cd8-afdc-26e8-6652-b35b01524405",
+			"headers": "",
+			"url": "\thttp://kelseyrocklin-test.apigee.net/hw3/api/github",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "87d87b70-10ab-feba-1e70-f146805c0bcf",
+			"data": null,
+			"dataMode": "params",
+			"name": "Server request with no token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1489289433669,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Status code is 401: unauthorized\"] = responseCode.code === 401;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
