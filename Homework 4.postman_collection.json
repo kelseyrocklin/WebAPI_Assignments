@@ -1,0 +1,184 @@
+{
+	"id": "8a0d54d8-38d9-28b5-3eca-eea1eed815a6",
+	"name": "Homework 4",
+	"description": "",
+	"order": [
+		"11581b87-16ed-bcee-e11d-f1eaa0b3ec18",
+		"38eeccfe-5d18-237e-bb96-8be0f450959f",
+		"a714edeb-9be7-cbb0-67aa-5783b7c41fde",
+		"93df69f9-5ba6-aab0-f197-8f083e6c5831",
+		"4f22d082-ea17-4dca-e204-ab94d8f84c09",
+		"8ec7efb2-7153-1dc3-87a3-7b881770962f"
+	],
+	"folders": [],
+	"timestamp": 1490824658599,
+	"owner": "1502163",
+	"public": false,
+	"requests": [
+		{
+			"id": "11581b87-16ed-bcee-e11d-f1eaa0b3ec18",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "\thttp://kelseyrocklin-test.apigee.net/hw4",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "name",
+					"value": "movie",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "year",
+					"value": "1990",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "actor",
+					"value": "sean",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1490914129074,
+			"name": "Home page",
+			"description": "",
+			"collectionId": "8a0d54d8-38d9-28b5-3eca-eea1eed815a6",
+			"responses": []
+		},
+		{
+			"id": "38eeccfe-5d18-237e-bb96-8be0f450959f",
+			"headers": "",
+			"url": "\thttp://kelseyrocklin-test.apigee.net/hw4/movies",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1490914141867,
+			"name": "Display all movies",
+			"description": "",
+			"collectionId": "8a0d54d8-38d9-28b5-3eca-eea1eed815a6",
+			"responses": []
+		},
+		{
+			"id": "4f22d082-ea17-4dca-e204-ab94d8f84c09",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://kelseyrocklin-test.apigee.net/hw4/movies/58dd85ab7b3ff1ec189ffdd6",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "name",
+					"value": " Requiem for a Dream",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1490914535081,
+			"name": "Update movie",
+			"description": "",
+			"collectionId": "8a0d54d8-38d9-28b5-3eca-eea1eed815a6",
+			"responses": []
+		},
+		{
+			"id": "8ec7efb2-7153-1dc3-87a3-7b881770962f",
+			"headers": "",
+			"url": "http://kelseyrocklin-test.apigee.net/hw4/movies/58dd8ba0c81b3695c0bcceac",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1490914471670,
+			"name": "Delete movie",
+			"description": "",
+			"collectionId": "8a0d54d8-38d9-28b5-3eca-eea1eed815a6",
+			"responses": []
+		},
+		{
+			"id": "93df69f9-5ba6-aab0-f197-8f083e6c5831",
+			"headers": "",
+			"url": "\thttp://kelseyrocklin-test.apigee.net/hw4/movies/58dd85ab7b3ff1ec189ffdd6",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1490914499387,
+			"name": "Get Single movie",
+			"description": "",
+			"collectionId": "8a0d54d8-38d9-28b5-3eca-eea1eed815a6",
+			"responses": []
+		},
+		{
+			"id": "a714edeb-9be7-cbb0-67aa-5783b7c41fde",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "\thttp://kelseyrocklin-test.apigee.net/hw4/movies",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Arrival",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "year",
+					"value": "2016",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "actor",
+					"value": "Amy Adams",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "actor",
+					"value": "Jeremy Renner",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "actor",
+					"value": "Forest Whitaker",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1490914250395,
+			"name": "Add new movie",
+			"description": "",
+			"collectionId": "8a0d54d8-38d9-28b5-3eca-eea1eed815a6",
+			"responses": []
+		}
+	]
+}
