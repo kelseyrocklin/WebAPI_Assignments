@@ -1,0 +1,284 @@
+{
+	"id": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+	"name": "Homework 5",
+	"description": "",
+	"order": [
+		"9364d1e7-d3f9-0d91-d558-f37ffb72dcb6",
+		"51b38185-6009-6502-a54a-6fd709b495d6",
+		"33b4d2a1-991f-2b4a-e96a-476d2364347e",
+		"8d6f2a20-ff59-4c38-2b81-14ac0d3573b1",
+		"d1408450-d664-5bc8-b198-a72e530084e5",
+		"9a093079-7451-1154-135e-bd843446511e",
+		"74adf5a0-8ffb-99cf-0124-c3c2090bdbea",
+		"aab2ad36-0ee1-2277-a081-36eff44534ca",
+		"b2ca80e2-f115-df32-0fc9-b2483a7f864a",
+		"bf9cec64-c095-a0ee-1772-1e4a10ae0e32"
+	],
+	"folders": [],
+	"timestamp": 1492708740087,
+	"owner": "1502163",
+	"public": false,
+	"requests": [
+		{
+			"id": "33b4d2a1-991f-2b4a-e96a-476d2364347e",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/movies/review/58dd86437b3ff1ec189ffdd7",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "name",
+					"value": "posterName",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "comment",
+					"value": "posterComment",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "rating",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492755539369,
+			"name": "Reviews for movie ID",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		},
+		{
+			"id": "51b38185-6009-6502-a54a-6fd709b495d6",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/movies/review/58f9a51f1b06a2bf418e412c",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Michael",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "comment",
+					"value": "It was pretty good",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "rating",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492756097149,
+			"name": "Add review",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		},
+		{
+			"id": "74adf5a0-8ffb-99cf-0124-c3c2090bdbea",
+			"headers": "",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/movies/58f9a51f1b06a2bf418e412c?reviews=true",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492756095312,
+			"name": "Get Single movie with review",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		},
+		{
+			"id": "8d6f2a20-ff59-4c38-2b81-14ac0d3573b1",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/movies",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Trainspotting",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "year",
+					"value": "1996",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "actor",
+					"value": "Ewan McGregor",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "actor",
+					"value": "Ewen Bremner",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "actor",
+					"value": "Johnny Lee Miller",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492755758174,
+			"name": "Add new movie",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		},
+		{
+			"id": "9364d1e7-d3f9-0d91-d558-f37ffb72dcb6",
+			"headers": "",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492755483866,
+			"name": "Home Page",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		},
+		{
+			"id": "9a093079-7451-1154-135e-bd843446511e",
+			"headers": "",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/movies/58dd86437b3ff1ec189ffdd7",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492755494383,
+			"name": "Get Single movie",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		},
+		{
+			"id": "aab2ad36-0ee1-2277-a081-36eff44534ca",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/movies/58dd85ab7b3ff1ec189ffdd6",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "name",
+					"value": "Test1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492756148892,
+			"name": "Update movie",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		},
+		{
+			"id": "b2ca80e2-f115-df32-0fc9-b2483a7f864a",
+			"headers": "",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/movies/58dd85ab7b3ff1ec189ffdd6",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492755595678,
+			"name": "Delete movie",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		},
+		{
+			"id": "bf9cec64-c095-a0ee-1772-1e4a10ae0e32",
+			"headers": "",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/movies",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492755604405,
+			"name": "Get all Movies",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		},
+		{
+			"id": "d1408450-d664-5bc8-b198-a72e530084e5",
+			"headers": "",
+			"url": "http://kelseyrocklin-test.apigee.net/hw5/movies/review/58dd86f47b3ff1ec189ffdd9",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1492756099161,
+			"name": "Delete reviews by movie ID",
+			"description": "",
+			"collectionId": "9d1ecfb4-4000-619d-7d4f-0d476d751dec",
+			"responses": []
+		}
+	]
+}
